@@ -24,4 +24,4 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release src/NumericExtensions/NumericExtensions.csproj --output .
     - name: Push Nuget Package
-      run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGETAPIKEY}} --skip-duplicate
+      run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_KEY}} --skip-duplicate
