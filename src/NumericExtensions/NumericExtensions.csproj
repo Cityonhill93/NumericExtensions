@@ -4,6 +4,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <FileVersion>0.0.0.0</FileVersion>
+    <Version>0.0.0</Version>
+    <Authors>Brandon Matheson</Authors>
+    <Company />
+    <Description>A collection of useful extension methods for numeric types.</Description>
+    <PackageProjectUrl>https://github.com/Cityonhill93/NumericExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Cityonhill93/NumericExtensions</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
