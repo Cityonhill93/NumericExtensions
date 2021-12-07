@@ -24,7 +24,7 @@ namespace NumericExtensions
         [InlineData(1000, 10)]
         [InlineData(10000, 10)]
         [InlineData(100000, 10)]
-        public void IsDivisibleBy_DivisibleNumbers_True(decimal d1, decimal d2)
+        public void IsDivisibleBy_DivisibleNumbers_True(double d1, double d2)
         {
             var isDivisible = d1.IsDivisibleBy(d2);
 
@@ -35,7 +35,7 @@ namespace NumericExtensions
         [InlineData(2, 3)]
         [InlineData(4, 5)]
         [InlineData(100, 75)]
-        public void IsDivisibleBy_NonDivisibleNumbers_False(decimal d1, decimal d2)
+        public void IsDivisibleBy_NonDivisibleNumbers_False(double d1, double d2)
         {
             var isDivisible = d1.IsDivisibleBy(d2);
 
