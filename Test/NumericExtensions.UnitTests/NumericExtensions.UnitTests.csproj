@@ -20,13 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Decimal\" />
-    <Folder Include="Double\" />
-    <Folder Include="Float\" />
-    <Folder Include="Int\" />
-    <Folder Include="Long\" />
-    <Folder Include="Short\" />
-  </ItemGroup>
-
 </Project>

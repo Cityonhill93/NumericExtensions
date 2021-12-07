@@ -16,13 +16,4 @@
     <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Int\" />
-    <Folder Include="Long\" />
-    <Folder Include="Float\" />
-    <Folder Include="Double\" />
-    <Folder Include="Decimal\" />
-    <Folder Include="Short\" />
-  </ItemGroup>
-
 </Project>
