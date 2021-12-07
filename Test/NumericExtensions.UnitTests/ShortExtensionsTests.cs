@@ -23,7 +23,6 @@ namespace NumericExtensions
         [InlineData(100, 10)]
         [InlineData(1000, 10)]
         [InlineData(10000, 10)]
-        [InlineData(100000, 10)]
         public void IsDivisibleBy_DivisibleNumbers_True(short s1, short s2)
         {
             var isDivisible = s1.IsDivisibleBy(s2);
