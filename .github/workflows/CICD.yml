@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  Setup:  
+  Main:  
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,32 +15,13 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Restore Buget Packages
+    - name: Restore Nuget Packages
       run: dotnet restore
-    
-  Build:
-    runs-on: ubuntu-latest
-    steps:
     - name: Build
-      run: dotnet build --no-restore    
-      
-  Test:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Unit Tests
+      run: dotnet build --no-restore
+    - name: Run Unit Tests
       run: dotnet test --no-build --verbosity normal
-      
-  Package:
-    runs-on: ubuntu-latest
-    steps:
     - name: Pack
       run: dotnet pack --configuration Release src/NumericExtensions/NumericExtensions.csproj --output .
-      
-  Deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: PushNuget
+    - name: Push Nuget Package
       run: dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGETAPIKEY}} --skip-duplicate
-    
-  
-    
