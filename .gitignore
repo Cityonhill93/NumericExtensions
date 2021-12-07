@@ -4,3 +4,4 @@
 
 /.vs
 /src/NumericExtensions/obj
+/Test/NumericExtensions.UnitTests/bin/Debug/net6.0
