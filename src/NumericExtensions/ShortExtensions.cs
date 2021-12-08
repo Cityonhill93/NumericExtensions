@@ -10,9 +10,10 @@
         /// <returns></returns>
         public static bool IsDivisibleBy(this short s1, short s2)
         {
-            var remainder = s1 % s2;
+            var decimal1 = Convert.ToDecimal(s1);
+            var decimal2 = Convert.ToDecimal(s1);
 
-            return remainder == 0;
+            return decimal1.IsDivisibleBy(decimal2);
         }
     }
 }
