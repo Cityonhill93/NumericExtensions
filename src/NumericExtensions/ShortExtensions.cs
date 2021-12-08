@@ -11,7 +11,7 @@
         public static bool IsDivisibleBy(this short s1, short s2)
         {
             var decimal1 = Convert.ToDecimal(s1);
-            var decimal2 = Convert.ToDecimal(s1);
+            var decimal2 = Convert.ToDecimal(s2);
 
             return decimal1.IsDivisibleBy(decimal2);
         }
