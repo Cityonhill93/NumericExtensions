@@ -6,16 +6,31 @@
     <LangVersion>10</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <FileVersion>1.1.0.0</FileVersion>
-    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
+    <Version>1.1.1</Version>
     <Authors>Brandon Matheson</Authors>
     <Company />
     <Description>A collection of useful extension methods for numeric types.</Description>
     <PackageProjectUrl>https://github.com/Cityonhill93/NumericExtensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Cityonhill93/NumericExtensions</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>
+      **********1.1.1**********
+      -Add release notes
+
+      **********1.1.0**********
+      -Target .NET Standard 2.0
+
+      **********1.0.1**********
+      -Consolidate logic for IsDivisibleBy, regardless of type
+
+      **********1.0.0**********
+      -Initial version
+      -Add IsDivisibleBy
+
+
+    </PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
